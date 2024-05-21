@@ -12,16 +12,9 @@ bot = commands.Bot(command_prefix='', intents=intents)
 async def on_ready():
     print(f'Hai fatto l-accesso come {bot.user}')
 
-
 @bot.command()
-async def malattie(ctx):
-    await ctx.send ("Le mallatie si trovano nei rifiuti organici buttatti nelle discariche a cielo aperto,possono fermentare e creare infenzioni batteriche o raramente parrssiti che attaccano gli umani")
-@bot.command()
-async def spreco_cibo(ctx):
-    await ctx.send ("Nel 2022, la FAO ha riportato alcuni dati globali piuttosto drammatici. Il 14% del cibo viene perso prima della commercializzazione mentre il 17%, pari a 931 milioni di tonnellate, viene sprecato dai consumatori e/o retail")
-@bot.command()
-async def spreco_plastica(ctx):
-    await ctx.send ("Tuttavia, solo una piccola frazione di questa valanga di rifiuti di plastica viene riciclata – il 9%, appunto – mentre il 19% viene incenerito e quasi il 50 percento finisce nelle discariche legali.")
+async def info(ctx):
+    await ctx.send ('se fai alcune domande il bot ti rispondera! puoi chiedere: malattie, spreco_cibo, spreco_plastica, provenienza_serra, plastiturismo, pesticidi')
 @bot.command()
 async def malattie(ctx):
     await ctx.send ("Le mallatie si trovano nei rifiuti organici buttatti nelle discariche a cielo aperto,possono fermentare e creare infenzioni batteriche o raramente parrssiti che attaccano gli umani")
@@ -41,4 +34,5 @@ async def plastiturismo(ctx):
 async def pesticidi(ctx):
     await ctx.send ("i pesticidi possono essere dei potenti inquinanti. Essi causano inquinamento, specialmente inquinamento idrico. Grazie alle piogge, finiscono con il penetrare nelle falde acquifere, contaminando corsi d'acqua, laghi e mare. Possono causare la moria di pesci e piccoli organismi, animali e vegetali.")
 
-bot.run('metti qui il tuo token')
+
+bot.run('metti qui il token del tuo bot')
